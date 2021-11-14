@@ -1,0 +1,25 @@
+.signin-card-background  {
+    background-image: url(https://i.postimg.cc/13pssvxG/bg-image.png);
+}
+
+.signin-backdrop {
+    backdrop-filter: blur(2px);
+}
+
+.grid-container {
+    grid-template-rows: 0%;
+}
+
+header {
+    display: none;
+}
+
+footer {
+    display: none;
+}
+
+.signin {
+    width: 100vw;
+    height: 100vh;
+    border: 3px solid yellow;
+}

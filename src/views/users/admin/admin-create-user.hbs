@@ -1,0 +1,40 @@
+<div class="col-md-4 mx-auto admin-cu-c">
+    <div class="card mt-4">
+        <div class="card-header">
+            <h2>New User</h2>
+        </div>
+        <div class="card-body">
+            <form action="/admin/create-user" method="POST">
+                <div class="form-group">
+                    <input type="text" name="full_name" class="form-control" placeholder=" Enter Full Name" autofocus>
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="number" id="identification_number" name="identification_number" class="form-control" placeholder=" Enter ID"></input>
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="email" name="email" class="form-control" placeholder=" Enter Email"></input>
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="text" name="role" class="form-control" placeholder=" Enter role: admin, default"></input>
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="password" name="password" class="form-control" placeholder=" Enter Password"></input>
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="password" name="confirm_password" class="form-control" placeholder=" Enter Confirm Password"></input>
+                </div>
+                <br>
+                <div class="form-group">
+                    <button class="btn btn-primary btn-block" type="submit">
+                        Save
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

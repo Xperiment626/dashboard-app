@@ -1,0 +1,51 @@
+<div class="col-md-4 mx-auto admin-cu-e">
+    <div class="card">
+        <div class="card-header">
+            <h3>Edit Treatment</h3>
+        </div>
+        <div class="card-body">
+            <form action="/admin/edit-treatment/{{treatment._id}}?_method=PUT" method="POST">
+                <input type="hidden" name="_method" value="PUT">
+                <div class="form-group">
+                    <input type="text" name="identification_number" class="form-control" placeholder=" Edit client ID number" value="{{treatment.identification_number}}">
+                </div>
+                <br>
+                <div class="form-group">
+                    <textarea type="text" name="description" class="form-control" placeholder=" Treatment description" value="{{treatment.description}}"></textarea>
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="number" name="cost" class="form-control" placeholder=" Cost" value="{{treatment.cost}}"></input>
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="date" name="start_date" class="form-control" placeholder=" Treatment start date" value="{{treatment.start_date}}"></input>
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="date" name="end_date" class="form-control" placeholder=" Treatment end date" value="{{treatment.end_date}}"></input>
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="number" name="duration" class="form-control" placeholder=" Treatment duration in months" value="{{treatment.duration}}"></input>
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="number" name="treatment_time" class="form-control" placeholder=" Treatment attended time" value="{{treatment.treatment_time}}"></input>
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="number" name="number_scheduled_appointments" class="form-control" placeholder=" Treatment scheduled appointments" value="{{treatment.number_scheduled_appointments}}"></input>
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="number" name="scheduled_appointments_attended" class="form-control" placeholder=" Treatment scheduled appointments attended" value="{{treatment.scheduled_appointments_attended}}"></input>
+                </div>
+                <br>
+                <div class="form-group">
+                    <button class="btn btn-primary btn-block" type="submit">Save changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,39 @@
+<div class="col-md-4 mx-auto admin-cu-e">
+    <div class="card">
+        <div class="card-header">
+            <h3>Edit User</h3>
+        </div>
+        <div class="card-body">
+            <form action="/admin/edit-user/{{user._id}}?_method=PUT" method="POST">
+                <input type="hidden" name="_method" value="PUT">
+                <div class="form-group">
+                    <input type="text" name="full_name" class="form-control" placeholder=" Edit Full Name" value="{{user.full_name}}">
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="number" name="identification_number" class="form-control" placeholder=" Edit ID" value="{{user.identification_number}}"></input>
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="email" name="email" class="form-control" placeholder=" Email" value="{{user.email}}"></input>
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="text" name="role" class="form-control" placeholder=" Role" value="{{user.role}}"></input>
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="text" name="password" class="form-control" placeholder=" Password" value="{{user.password}}"></input>
+                </div>
+                <br>
+                <div class="form-group">
+                    <input type="text" name="confirm_password" class="form-control" placeholder=" Confirm Password" value="{{user.confirm_password}}"></input>
+                </div>
+                <br>
+                <div class="form-group">
+                    <button class="btn btn-primary btn-block" type="submit">Save changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

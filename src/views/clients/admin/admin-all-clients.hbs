@@ -1,0 +1,74 @@
+{{#if all_clients}}
+    <div class="w-full card-div">
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-4 py-12">
+        <div class="text-center pb-12">
+            <h1 class="font-bold text-3xl md:text-4xl lg:text-5xl font-heading text-white">
+                Dashboard App Clients Inserted
+            </h1>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {{#each all_clients}}
+            <div class="w-full rounded-lg sahdow-lg p-12 flex flex-col justify-center items-center card-profile">
+                <a href="/admin/client/edit/{{_id}}" class="card-edit-a"><i class="fas fa-edit card-edit-ico"></i></a>
+                <div class="mb-8">
+                    <img class="object-center object-cover rounded-full h-36 w-36"
+                        src="/assets/images/none-user-ico.png"
+                        alt="photo" />
+                </div>
+                <div class="text-center">
+                    <p class="text-xl text-white font-bold mb-2">{{full_name}}</p>
+                    <p class="text-xl text-white font-bold mb-2">{{identification_number}}</p>
+                    <p class="text-base text-gray-400 font-normal">{{email}}</p>
+                    <p class="text-base text-gray-400 font-normal">{{phone}}</p>
+                </div>
+                <form action="/admin/delete-client/{{_id}}?_method=DELETE" method="POST">
+                    <input type="hidden" name="_method" value="DELETE" />
+                    <button class="btn btn-danger btn-block btn-md" type="submit">
+                        Delete
+                    </button>
+                </form>
+            </div>
+            {{/each}}
+        </div>
+    </section>
+</div>
+{{else}}
+<div id="no-notes-card" class="card border-secondary mb-3 mt-4">
+    <div class="card-header">
+        <h2>All clients inserted are...</h2>
+    </div>
+    <div class="card-body text-secondary">
+        <h2 class="card-title">Whoops! There is no clients register yet!</h2>
+        <br />
+        <a href="/admin/add-client" class="btn btn-success btn-block">
+            <h4>Insert new
+                client!</h4>
+        </a>
+    </div>
+</div>
+{{/if}}
+
+{{!-- <div class="row">
+    {{#each all_users}}
+    <div class="col-md-3">
+        <div class="card mt-4">
+            <div class="card-body">
+                <h4 class="card-title d-flex justify-content-between align-items-center">
+                    {{full_name}}
+                    <a href="/admin/edit-user/{{_id}}"><i class="fas fa-edit"></i></a>
+                </h4>
+                <p>{{identification_number}}</p>
+                <p>{{email}}</p>
+                <p>{{role}}</p>
+                <form action="/admin/delete-user/{{_id}}?_method=DELETE" method="POST">
+                    <input type="hidden" name="_method" value="DELETE" />
+                    <button class="btn btn-danger btn-block btn-md" type="submit">
+                        Delete
+                    </button>
+                </form>
+            </div>
+        </div>
+        <br />
+    </div>
+    {{/each}}
+</div> --}}

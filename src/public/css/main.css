@@ -1,0 +1,6 @@
+.grid-container-main {
+    display: grid;
+    grid-template-areas: 
+    'panel-main main-main';
+    grid-template-columns: 15% 80%;
+}

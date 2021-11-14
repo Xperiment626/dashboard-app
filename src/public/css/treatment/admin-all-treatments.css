@@ -1,0 +1,39 @@
+#no-notes-card {
+    margin: 0 auto;
+    padding: 15px;
+    max-width: 20rem;
+    position: relative;
+    background-color: white;
+}
+
+body {
+    --tw-gradient-to: #3b82f6;
+    --tw-gradient-from: #1e3a8a;
+    --tw-gradient-stops: var(--tw-gradient-from),var(--tw-gradient-to, rgba(30, 58, 138, 0));
+    background-image: linear-gradient(to top right,var(--tw-gradient-stops));
+    width: 100vw;
+    height: 95vh;
+}
+
+.card-div {
+    --tw-gradient-to: #3b82f6;
+    --tw-gradient-from: #1e3a8a;
+    --tw-gradient-stops: var(--tw-gradient-from),var(--tw-gradient-to, rgba(30, 58, 138, 0));
+    background-image: linear-gradient(to top right,var(--tw-gradient-stops));
+}
+
+.card-profile {
+    background: rgb(26, 26, 130);
+}
+
+.card-edit-a {
+    margin: 0 0 0 auto;
+}
+
+.fa-edit {
+    font-size: 25px;
+}
+
+/* footer {
+    margin: 0 0 5vh 0;
+} */

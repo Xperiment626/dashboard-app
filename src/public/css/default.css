@@ -1,0 +1,22 @@
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        'header header'
+        'main main'
+        'footer footer';
+    grid-template-rows: 8% 2fr 5%;
+}
+
+header {
+    grid-area: header;
+    background: #212F3D;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+    background: #212F3D;
+}

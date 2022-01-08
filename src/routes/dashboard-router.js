@@ -1,8 +1,7 @@
 const express = require('express');
 const router = express.Router();
+const controller = require('../controllers/dashboard-controller');
 
-router.get('/dashboard', (req, res) => {
-    res.render('dashboard/dashboard-panel', {css: '<link rel="stylesheet" href="/css/main.css">'});
-})
+router.get('/dashboard', controller.draw);
 
 module.exports = router;

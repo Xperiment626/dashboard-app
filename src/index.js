@@ -26,7 +26,7 @@ app.set('view engine', 'hbs')
 
 // Middleware
 
-app.use(express.urlencoded({extended: false}));
+app.use(express.urlencoded({ extended: false }));
 app.use(method_override('_method'));
 app.use(session({
     secret: 'secret',

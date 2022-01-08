@@ -1,3 +1,19 @@
 .dashboard-panel {
-    grid-area: panel-main;
+    grid-area: 'panel-main';
+}
+
+.dashboard {
+    grid-area: 'main-main';
+}
+
+#myChart {
+    grid-area: 'chart1';
+    width: 1000px;
+    height: 1000px;
+}
+
+#myChart1 {
+    grid-area: 'chart2';
+    width: 1000px;
+    height: 1000px;
 }
